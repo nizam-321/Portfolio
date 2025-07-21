@@ -1,3 +1,6 @@
+my respnsive persional portoflio website created with next.Js
+
+
 portfolio/
 ├── app/
 │   ├── components/
