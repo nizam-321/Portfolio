@@ -1,4 +1,4 @@
-my respnsive persional portoflio website created with next.Js
+live link('https://portfolio-six-beryl-46.vercel.app/')
 
 
 portfolio/
