@@ -10,15 +10,15 @@ const projects = [
     description: 'A personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion.',
     image: '/projects/project1.png',
     tech: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-    demo: 'https://yourportfolio.com',
-    code: 'https://github.com/yourusername/portfolio'
+    live: 'https://codernizam.vercel.app',
+    code: 'https://github.com/nizam-321/Portfolio'
   },
   {
     title: 'Todo App',
     description: 'A simple and beautiful todo app with React and localStorage.',
     image: '/projects/project2.png',
     tech: ['React', 'CSS Modules'],
-    demo: 'https://yourtodoapp.com',
+    live: 'https://yourtodoapp.com',
     code: 'https://github.com/yourusername/todo-app'
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     description: 'A markdown-based blog platform using Next.js and Tailwind CSS.',
     image: '/projects/project3.png',
     tech: ['Next.js', 'Tailwind CSS', 'Markdown'],
-    demo: '#',
+    live: '#',
     code: '#'
   }
   // Add more projects as needed
