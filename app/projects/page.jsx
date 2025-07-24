@@ -10,7 +10,7 @@ const projects = [
     description: 'A personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion.',
     image: '/projects/project1.png',
     tech: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-    live: 'https://codernizam.vercel.app',
+    demo: 'https://codernizam.vercel.app',
     code: 'https://github.com/nizam-321/Portfolio'
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     description: 'A simple and beautiful todo app with React and localStorage.',
     image: '/projects/project2.png',
     tech: ['React', 'CSS Modules'],
-    live: 'https://yourtodoapp.com',
+    demo: 'https://yourtodoapp.com',
     code: 'https://github.com/yourusername/todo-app'
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     description: 'A markdown-based blog platform using Next.js and Tailwind CSS.',
     image: '/projects/project3.png',
     tech: ['Next.js', 'Tailwind CSS', 'Markdown'],
-    live: '#',
+    demo: '#',
     code: '#'
   }
   // Add more projects as needed
@@ -76,7 +76,7 @@ export default function ProjectsPage() {
               <div className="flex gap-4">
                 {project.demo !== '#' && (
                   <Link
-                    href={project.live}
+                    href={project.demo}
                     className="text-sm font-medium text-blue-600 hover:underline"
                     target="_blank"
                   >
