@@ -76,7 +76,7 @@ export default function ProjectsPage() {
               <div className="flex gap-4">
                 {project.demo !== '#' && (
                   <Link
-                    href={project.demo}
+                    href={project.live}
                     className="text-sm font-medium text-blue-600 hover:underline"
                     target="_blank"
                   >
