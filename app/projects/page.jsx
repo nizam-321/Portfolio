@@ -8,7 +8,7 @@ const projects = [
   {
     title: 'Portfolio Website',
     description: 'A personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion.',
-    image: 'projects/project1.png',
+    image: '/projects/project1.png',
     tech: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
     demo: 'https://codernizam.vercel.app',
     code: 'https://github.com/nizam-321/Portfolio'
