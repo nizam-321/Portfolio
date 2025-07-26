@@ -10,8 +10,8 @@ const projects = [
     description: 'A personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion to showcase projects, skills, and contact info with smooth animations.',
     image: '/projects/project1.png',
     tech: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-    demo: 'https://yourportfolio.com',
-    code: 'https://github.com/yourusername/portfolio'
+    demo: 'https://codernizam.vercel.app',
+    code: 'https://github.com/nizam-321/Portfolio'
   },
   {
     title: 'FlipKart Clone',
