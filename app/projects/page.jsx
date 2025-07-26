@@ -7,29 +7,29 @@ import Link from 'next/link'
 const projects = [
   {
     title: 'Portfolio Website',
-    description: 'A personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion.',
+    description: 'A personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion to showcase projects, skills, and contact info with smooth animations.',
     image: '/projects/project1.png',
     tech: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
     demo: 'https://yourportfolio.com',
     code: 'https://github.com/yourusername/portfolio'
   },
   {
-    title: 'Todo App',
-    description: 'A simple and beautiful todo app with React and localStorage.',
+    title: 'FlipKart Clone',
+    description: 'A clean and responsive Flipkart-like e-commerce website built with Next.js 14 and Tailwind CSS. It features modern UI components and works well on all devices.',
     image: '/projects/project2.png',
-    tech: ['React', 'CSS Modules'],
-    demo: 'https://yourtodoapp.com',
-    code: 'https://github.com/yourusername/todo-app'
+    tech: ['Next.js', 'Tailwind CSS'],
+    demo: 'https://flipkart-clone-gilt-two.vercel.app',
+    code: 'https://github.com/nizam-321/FlipKart-Clone'
   },
   {
-    title: 'Blog Platform',
-    description: 'A markdown-based blog platform using Next.js and Tailwind CSS.',
+    title: 'Task Manager',
+    description: 'A simple and clean task management app built with React and Tailwind CSS. It lets users create, update, and delete tasks with an intuitive UI.',
     image: '/projects/project3.png',
-    tech: ['Next.js', 'Tailwind CSS', 'Markdown'],
-    demo: '#',
-    code: '#'
+    tech: ['React', 'Vite', 'Tailwind CSS'],
+    demo: 'https://task-manager-ashy-alpha.vercel.app',
+    code: 'https://github.com/nizam-321/Task-Mnager'
   }
-  // Add more projects as needed
+  
 ]
 
 export default function ProjectsPage() {

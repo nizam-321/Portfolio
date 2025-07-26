@@ -82,7 +82,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-100 text-center text-sm text-gray-500 py-4">
-        © {year} Your Name. All rights reserved.
+        © {year} Nizam. All rights reserved.
       </div>
     </motion.footer>
   )

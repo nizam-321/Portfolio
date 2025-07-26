@@ -1,57 +1,90 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { motion } from 'framer-motion'
 
 export default function ContactPage() {
+  const form = useRef()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   })
-
   const [success, setSuccess] = useState(false)
+  const [isSending, setIsSending] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData({ ...formData, [name]: value })
   }
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault()
+    setIsSending(true)
 
-    setTimeout(() => {
-      setSuccess(true)
-      setFormData({ name: '', email: '', message: '' })
-
-      setTimeout(() => setSuccess(false), 5000)
-    }, 500)
+    emailjs
+      .sendForm('service_71nq7rh', 'template_5kf1825', form.current, {
+        publicKey: 'kqH8ZCAJU60T-rONs',
+      })
+      .then(
+        () => {
+          setSuccess(true)
+          setFormData({ name: '', email: '', message: '' })
+          setIsSending(false)
+          setTimeout(() => setSuccess(false), 5000)
+        },
+        (error) => {
+          console.error('FAILED...', error.text)
+          setIsSending(false)
+        }
+      )
   }
 
   return (
     <div className="min-h-screen pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-purple-50 to-blue-50">
-      <div className="max-w-3xl mx-auto text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="max-w-3xl mx-auto text-center"
+      >
         <h1 className="text-4xl font-extrabold text-gray-800 mb-4">Get in Touch</h1>
-        <p className="text-gray-600 mb-10">Have a question or want to work together? Fill out the form below.</p>
-      </div>
+        <p className="text-gray-600 mb-10">
+          Have a question or want to work together? Fill out the form below.
+        </p>
+      </motion.div>
 
       {success && (
-        <div className="max-w-2xl mx-auto mb-6">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="max-w-2xl mx-auto mb-6"
+        >
           <div className="bg-green-100 border border-green-300 text-green-800 px-6 py-4 rounded-md shadow-md transition-all duration-300">
             <h2 className="font-semibold text-lg">Message sent successfully!</h2>
-            <p className="text-sm mt-1">Thanks for reaching out. I’ll get back to you as soon as possible.</p>
+            <p className="text-sm mt-1">
+              Thanks for reaching out. I’ll get back to you as soon as possible.
+            </p>
           </div>
-        </div>
+        </motion.div>
       )}
 
-      <form action="https://formsubmit.co/nizam.frontend@gmail.com" method="POST"
-        onSubmit={handleSubmit} 
+      <motion.form
+        ref={form}
+        onSubmit={sendEmail}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
         className="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-md space-y-6"
       >
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+            Name
+          </label>
           <input
             type="text"
             id="name"
@@ -64,7 +97,9 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            Email
+          </label>
           <input
             type="email"
             id="email"
@@ -77,7 +112,9 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+            Message
+          </label>
           <textarea
             id="message"
             name="message"
@@ -91,33 +128,35 @@ export default function ContactPage() {
 
         <button
           type="submit"
-          className="w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white py-3 rounded-md font-medium hover:opacity-90 transition-opacity duration-300"
+          disabled={isSending}
+          className={`w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white py-3 rounded-md font-medium transition-opacity duration-300 ${isSending ? 'opacity-60 cursor-not-allowed' : 'hover:opacity-90'
+            }`}
         >
-          Send Message
+          {isSending ? 'Sending...' : 'Send Message'}
         </button>
-      </form>
+      </motion.form>
 
       {/* Social Links */}
       <div className="max-w-2xl mx-auto mt-10 text-center">
         <p className="text-gray-600 mb-4 text-lg">Or connect with me directly:</p>
         <div className="flex justify-center gap-6 text-3xl">
-          <a 
-            href="https://wa.me/917017053793" 
-            target="_blank" 
+          <a
+            href="https://wa.me/917017053793"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-green-600 hover:text-green-800 text-4xl transition-colors"
           >
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
-          <a 
-            href="mailto:nizam.frontend@gmail.com" 
+          <a
+            href="mailto:nizam.frontend@gmail.com"
             className="text-blue-600 hover:text-blue-800 text-4xl transition-colors"
           >
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
-          <a 
-            href="https://www.linkedin.com/in/nizam-ahmed-833090357/" 
-            target="_blank" 
+          <a
+            href="https://www.linkedin.com/in/nizam-ahmed-833090357/"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-blue-700 text-4xl hover:text-blue-900 transition-colors"
           >
