@@ -20,7 +20,7 @@ export default function Footer() {
         {/* Branding */}
         <div>
           <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text">
-            Portfolio
+            Nizam
           </h3>
           <p className="text-sm text-gray-500 mt-2 leading-relaxed">
             Crafted with ❤️ using Next.js and Tailwind CSS to showcase my work and skills.

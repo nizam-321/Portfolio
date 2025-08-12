@@ -33,7 +33,7 @@ export default function Navbar() {
             className="flex items-center space-x-2"
           >
             <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text hover:from-purple-500 hover:to-blue-400 transition-all duration-300">
-              Portfolio
+              NH
             </span>
           </Link>
 

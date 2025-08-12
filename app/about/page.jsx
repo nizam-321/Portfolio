@@ -52,7 +52,7 @@ export default function AboutPage() {
         >
           <h2 className="text-2xl font-semibold text-purple-600 mb-4">Who I Am</h2>
           <p className="text-gray-700 mb-4">
-            I'm a self-taught developer who enjoys learning by building. My main focus is on frontend development using tools like React.js, Next.js, and Tailwind CSS.
+            My name is Nizam and I am from Meerut.I'm a self-taught developer who enjoys learning by building. My main focus is on frontend development using tools like React.js, Next.js, and Tailwind CSS.
             I’m also familiar with backend technologies like Node.js, Express, and MongoDB, which helps me understand full-stack application flow.
           </p>
 
@@ -62,7 +62,7 @@ export default function AboutPage() {
             <li>Tailwind CSS, Bootstrap, HTML, CSS</li>
             <li>Node.js, Express.js, MongoDB (basic familiarity)</li>
             <li>Responsive Design, Performance, Clean Code</li>
-            <li>Version Control with Git & GitHub</li>
+            <li>REST Api, Version Control with Git & GitHub</li>
           </ul>
           <h3 className="text-lg font-medium text-gray-800 mt-6 mb-2">Education:</h3>
           <ul className="list-disc list-inside text-gray-700 space-y-1">

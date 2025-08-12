@@ -9,7 +9,7 @@ const projects = [
     title: 'Portfolio Website',
     description: 'A personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion to showcase projects, skills, and contact info with smooth animations.',
     image: '/projects/project1.png',
-    tech: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+    tech: ['Next.js', 'React', 'Tailwind CSS', 'Framer Motion'],
     demo: 'https://codernizam.vercel.app',
     code: 'https://github.com/nizam-321/Portfolio'
   },
@@ -17,17 +17,34 @@ const projects = [
     title: 'FlipKart Clone',
     description: 'A clean and responsive Flipkart-like e-commerce website built with Next.js 14 and Tailwind CSS. It features modern UI components and works well on all devices.',
     image: '/projects/project2.png',
-    tech: ['Next.js', 'Tailwind CSS'],
+    tech: ['Next.js', 'React', 'Tailwind CSS', 'React Icons'],
     demo: 'https://flipkart-clone-gilt-two.vercel.app',
     code: 'https://github.com/nizam-321/FlipKart-Clone'
   },
   {
+  title: 'QuickArt',
+  description: 'QuickArt is a modern art e-commerce platform that allows users to browse and purchase digital art. Built with Next.js 14, Tailwind CSS, and App Router.',
+  image: '/projects/project4.png', 
+  tech: ['Next.js', 'React', 'Tailwind CSS', 'App Router'],
+  demo: 'https://quickart-coral.vercel.app/', 
+  code: 'https://github.com/nizam-321/quickart'
+},
+
+  {
     title: 'Task Manager',
     description: 'A simple and clean task management app built with React and Tailwind CSS. It lets users create, update, and delete tasks with an intuitive UI.',
     image: '/projects/project3.png',
-    tech: ['React', 'Vite', 'Tailwind CSS'],
+    tech: ['React', 'Vite', 'JavaScript (ES6+)', 'Bootstrap','LocalStorage'],
     demo: 'https://task-manager-ashy-alpha.vercel.app',
     code: 'https://github.com/nizam-321/Task-Mnager'
+  },
+   {
+    title: 'QR Code Generator',
+    description: 'A minimal and fast QR Code Generator built with HTML, CSS, JavaScript and QR Code API / Library. It allows users to enter text and instantly generate a scannable QR code.',
+    image: '/projects/project5.png',
+    tech: ['HTML', 'CSS', 'JavaScript', 'QR Code API'],
+    demo: 'https://qr-code-generator-nizam.vercel.app/',
+    code: 'https://qr-code-generator-beta-tawny.vercel.app/'
   }
   
 ]
