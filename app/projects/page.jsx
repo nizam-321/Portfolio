@@ -43,8 +43,8 @@ const projects = [
     description: 'A minimal and fast QR Code Generator built with HTML, CSS, JavaScript and QR Code API / Library. It allows users to enter text and instantly generate a scannable QR code.',
     image: '/projects/project5.png',
     tech: ['HTML', 'CSS', 'JavaScript', 'QR Code API'],
-    demo: 'https://qr-code-generator-nizam.vercel.app/',
-    code: 'https://qr-code-generator-beta-tawny.vercel.app/'
+    demo: 'https://qr-code-generator-beta-tawny.vercel.app/
+    code: 'https://github.com/nizam-321/QR-Code-Generator'
   }
   
 ]
