@@ -6,14 +6,6 @@ import Link from 'next/link'
 
 const projects = [
   {
-    title: 'Portfolio Website',
-    description: 'A personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion to showcase projects, skills, and contact info with smooth animations.',
-    image: '/projects/project1.png',
-    tech: ['Next.js', 'React', 'Tailwind CSS', 'Framer Motion'],
-    demo: 'https://codernizam.vercel.app',
-    code: 'https://github.com/nizam-321/Portfolio'
-  },
-  {
     title: 'FlipKart Clone',
     description: 'A clean and responsive Flipkart-like e-commerce website built with Next.js 14 and Tailwind CSS. It features modern UI components and works well on all devices.',
     image: '/projects/project2.png',
@@ -28,7 +20,15 @@ const projects = [
   tech: ['Next.js', 'React', 'Tailwind CSS', 'App Router'],
   demo: 'https://quickart-coral.vercel.app/', 
   code: 'https://github.com/nizam-321/quickart'
-},
+ }, 
+ {
+  title: 'Weather Now',
+  description: 'A simple weather app built with React, Tailwind CSS, and Vite. It uses the Open-Meteo API to fetch real-time weather data for any city, with responsive design and error handling.',
+  image: '/projects/project6.png', 
+  tech: ['React', 'Tailwind CSS', 'Vite', 'Open-Meteo API'],
+  demo: 'https://weather-now-assignment-by-aganitha.vercel.app/',
+  code: 'https://github.com/nizam-321/weather-now-assignment-by-Aganitha'
+ },
 
   {
     title: 'Task Manager',
