@@ -14,6 +14,22 @@ const projects = [
     code: 'https://github.com/nizam-321/FlipKart-Clone'
   },
   {
+  title: 'Financial Dashboard (Next.js)',
+  description: 'A responsive financial dashboard built with Next.js 15 and Tailwind CSS. It features stat cards (AUM, SIP), filterable time ranges, charts (bubble, bar-line composites, multi-line MIS), PDF export, and can be packaged as a mobile app via Capacitor.',
+  image: '/projects/project-financial-dashboard.png', // please replace with your screenshot file path
+  tech: ['Next.js (App Router)', 'Tailwind CSS', 'react-chartjs-2', 'html‑to‑image', 'jsPDF', 'Capacitor (Android/iOS)'],
+  demo: 'https://fininacial-dashboard-assignment.vercel.app',
+  code: 'https://github.com/nizam-321/fininacial-dashboard-assignment'
+},
+    {
+    title: 'WhatBytes Frontend Assignment',
+    description: 'E‑commerce dashboard built with Next.js and Tailwind CSS. Features product listing, detail page, filters (category, price, search, URL‑based), persistent cart with Context API, and a cart page. Desktop-optimized UI; mobile responsiveness to be added.',
+    image: '/projects/project-whatbytes.png', // replace with actual image path if available
+    tech: ['React', 'Next.js', 'Context API', 'Tailwind CSS'],
+    demo: 'https://assignment-what-bytes-lovat.vercel.app',
+    code: 'https://github.com/nizam-321/Assignment-WhatBytes'
+  },
+  {
   title: 'QuickArt',
   description: 'QuickArt is a modern art e-commerce platform that allows users to browse and purchase digital art. Built with Next.js 14, Tailwind CSS, and App Router.',
   image: '/projects/project4.png', 
