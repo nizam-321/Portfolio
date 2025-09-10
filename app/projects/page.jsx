@@ -21,14 +21,6 @@ const projects = [
   demo: 'https://fininacial-dashboard-assignment.vercel.app',
   code: 'https://github.com/nizam-321/fininacial-dashboard-assignment'
 },
-    {
-    title: 'WhatBytes Frontend Assignment',
-    description: 'E‑commerce dashboard built with Next.js and Tailwind CSS. Features product listing, detail page, filters (category, price, search, URL‑based), persistent cart with Context API, and a cart page. Desktop-optimized UI; mobile responsiveness to be added.',
-    image: '/projects/project-whatbytes.png', // replace with actual image path if available
-    tech: ['React', 'Next.js', 'Context API', 'Tailwind CSS'],
-    demo: 'https://assignment-what-bytes-lovat.vercel.app',
-    code: 'https://github.com/nizam-321/Assignment-WhatBytes'
-  },
   {
   title: 'QuickArt',
   description: 'QuickArt is a modern art e-commerce platform that allows users to browse and purchase digital art. Built with Next.js 14, Tailwind CSS, and App Router.',
