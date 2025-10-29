@@ -6,6 +6,14 @@ import Link from 'next/link'
 
 const projects = [
   {
+    title: 'Vichar - Blog (Full Stack)',
+    description: 'Vichar is a full-stack blogging platform with user authentication, CRUD posts, comments, and rich text editing. Built as a full-stack app with Next.js and a Node/Mongo backend.',
+    image: '/projects/vichar.png', 
+    tech: ['Next.js', 'Node/Express', 'MongoDB', 'Tailwind CSS', 'Authentication'],
+    demo: 'https://vichar-blog.vercel.app', 
+    code: 'https://github.com/nizam-321/Vichar-blog-fullStack-webApplication'
+  },
+  {
     title: 'FlipKart Clone',
     description: 'A clean and responsive Flipkart-like e-commerce website built with Next.js 14 and Tailwind CSS. It features modern UI components and works well on all devices.',
     image: '/projects/project2.png',
