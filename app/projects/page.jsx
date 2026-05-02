@@ -6,6 +6,46 @@ import Link from 'next/link'
 
 const projects = [
   {
+    title: 'Gigflow',
+    description: 'Gigflow is a freelance marketplace platform where clients can post jobs and freelancers can apply. It features job management, user profiles, and a streamlined workflow.',
+    image: '/projects/gigflow.png',
+    tech: ['React', 'Tailwind CSS', 'Redux', 'Node/Express', 'MongoDB', 'JWT'],
+    demo: 'https://gigflow-sage.vercel.app',
+    code: 'https://github.com/nizam-321/gigflow'
+  },
+  {
+    title: 'Finance Manager',
+    description: 'A comprehensive finance tracking application that helps users manage their income, expenses, and budgets with intuitive charts and reports.',
+    image: '/projects/findash.png',
+    tech: ['Next.js', 'Tailwind CSS', 'Shadcn UI', 'Recharts', 'Lucide React'],
+    demo: 'https://finance-manager-chi-three.vercel.app/',
+    code: 'https://github.com/nizam-321/finance-manager'
+  },
+  {
+    title: 'AI Movie Insight Builder',
+    description: 'An AI-powered application that provides deep insights, summaries, and recommendations for movies using advanced language models.',
+    image: '/projects/movie-insight.png',
+    tech: ['Next.js', 'React', 'OpenAI API', 'Tailwind CSS', 'Framer Motion'],
+    demo: 'https://ai-movie-insight-builder-xi.vercel.app/',
+    code: 'https://github.com/nizam-321/AI-Movie-Insight-Builder'
+  },
+  {
+    title: 'Brigade Sevilla',
+    description: 'A luxury real estate project showcase website featuring high-quality imagery, amenities details, and interactive floor plans.',
+    image: '/projects/grigade-sevilla.png',
+    tech: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'Responsive Design'],
+    demo: 'https://brigade-sevilla.vercel.app/',
+    code: 'https://github.com/nizam-321/Brigade-Sevilla'
+  },
+  {
+    title: 'Task Manager',
+    description: 'An advanced task management system with category filtering, priority levels, and persistent storage for better productivity.',
+    image: '/projects/task-manager.png',
+    tech: ['Next.js', 'Tailwind CSS', 'Context API','Node/Express', 'MongoDB', 'JWT' ],
+    demo: 'https://task-manager-5jqj.vercel.app/',
+    code: 'https://github.com/nizam-321/task-manager'
+  },
+  {
     title: 'Vichar - Blog (Full Stack)',
     description: 'Vichar is a full-stack blogging platform with user authentication, CRUD posts, comments, and rich text editing. Built as a full-stack app with Next.js and a Node/Mongo backend.',
     image: '/projects/vichar.png', 
@@ -45,15 +85,6 @@ const projects = [
   demo: 'https://weather-now-assignment-by-aganitha.vercel.app/',
   code: 'https://github.com/nizam-321/weather-now-assignment-by-Aganitha'
  },
-
-  {
-    title: 'Task Manager',
-    description: 'A simple and clean task management app built with React and Tailwind CSS. It lets users create, update, and delete tasks with an intuitive UI.',
-    image: '/projects/project3.png',
-    tech: ['React', 'Vite', 'JavaScript (ES6+)', 'Bootstrap','LocalStorage'],
-    demo: 'https://task-manager-ashy-alpha.vercel.app',
-    code: 'https://github.com/nizam-321/Task-Mnager'
-  },
    {
     title: 'QR Code Generator',
     description: 'A minimal and fast QR Code Generator built with HTML, CSS, JavaScript and QR Code API / Library. It allows users to enter text and instantly generate a scannable QR code.',
