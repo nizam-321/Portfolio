@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function AboutPage() {
   return (
@@ -36,9 +37,11 @@ export default function AboutPage() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
         >
-          <img 
+          <Image
             src="/profile.jpg"
             alt="Profile"
+            width={192}
+            height={192}
             className="w-48 h-48 rounded-full object-cover shadow-lg"
           />
         </motion.div>
@@ -52,8 +55,8 @@ export default function AboutPage() {
         >
           <h2 className="text-2xl font-semibold text-purple-600 mb-4">Who I Am</h2>
           <p className="text-gray-700 mb-4">
-            My name is Nizam and I am from Meerut.I'm a self-taught developer who enjoys learning by building. My main focus is on frontend development using tools like React.js, Next.js, and Tailwind CSS.
-            I’m also familiar with backend technologies like Node.js, Express, and MongoDB, which helps me understand full-stack application flow.
+            My name is Nizam and I am from Meerut.I&apos;m a self-taught developer who enjoys learning by building. My main focus is on frontend development using tools like React.js, Next.js, and Tailwind CSS.
+            I&apos;m also familiar with backend technologies like Node.js, Express, and MongoDB, which helps me understand full-stack application flow.
           </p>
 
           <h3 className="text-lg font-medium text-gray-800 mt-6 mb-2">What I Work With:</h3>

@@ -107,7 +107,7 @@ export default function ProjectsPage() {
       >
         <h1 className="text-4xl font-extrabold text-gray-800 mb-4">My Projects</h1>
         <p className="text-gray-600 text-lg">
-          Here are some of the web applications and tools I've built recently.
+          Here are some of the web applications and tools I&apos;ve built recently.
         </p>
       </motion.div>
 
