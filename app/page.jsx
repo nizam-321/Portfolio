@@ -20,7 +20,7 @@ export default function HomePage() {
         className="text-center px-4"
       >
         <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
-          Hi, I'm <span className="bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text">Nizam</span>
+          Hi, I&apos;m{" "} <span className="bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text">Nizam</span>
         </h1>
 
         <motion.p
@@ -29,7 +29,7 @@ export default function HomePage() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg text-gray-600 max-w-xl mx-auto mb-8"
         >
-          I'm a Frontend Developer focused on building clean and performant web apps using modern tools like React, Next.js, and Tailwind CSS.
+          I&apos;m a Frontend Developer focused on building clean and performant web apps using modern tools like React, Next.js, and Tailwind CSS.
         </motion.p>
 
         <motion.div
